@@ -1,9 +1,10 @@
 module "cloudwatch_alarms" {
   source = "./modules/cloudwatch-alarms"
 
-  aws_profile    = var.aws_profile
-  aws_region     = var.aws_region
-  ssm_param_name = var.ssm_param_name
+  aws_profile        = var.aws_profile
+  aws_region         = var.aws_region
+  sns_topic_name     = var.sns_topic_name
+  notification_email = var.notification_email
 
   # Enable/disable creation and deletion functionality
   enable_creation = var.enable_creation

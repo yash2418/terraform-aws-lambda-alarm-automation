@@ -1,7 +1,10 @@
 # AWS Configuration
-ssm_param_name = "/path/to/your/sns-topic-parameter"
-aws_profile    = "your-aws-profile"
-aws_region     = "your-aws-region"
+aws_profile        = "your-aws-profile"
+aws_region         = "your-aws-region"
+
+# SNS Configuration
+sns_topic_name     = "your-sns-topic-name"
+notification_email = "your-email@example.com"
 
 # Feature Toggles
 enable_creation = true

@@ -9,9 +9,15 @@ variable "aws_region" {
   default     = "your-aws-region"
 }
 
-variable "ssm_param_name" {
+variable "sns_topic_name" {
   type        = string
-  description = "Name of SSM parameter containing SNS topic ARN"
+  description = "Name for the SNS topic for alarm notifications"
+  default     = "cloudwatch-lambda-alarms"
+}
+
+variable "notification_email" {
+  type        = string
+  description = "Email address for alarm notifications"
 }
 
 variable "enable_creation" {

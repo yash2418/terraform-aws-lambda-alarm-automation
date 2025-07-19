@@ -34,6 +34,11 @@ output "delete_event_rule_arn" {
 }
 
 output "sns_topic_arn" {
-  description = "ARN of the SNS topic from SSM parameter"
+  description = "ARN of the created SNS topic"
   value       = module.cloudwatch_alarms.sns_topic_arn
+}
+
+output "sns_topic_subscription_arn" {
+  description = "ARN of the SNS topic subscription"
+  value       = module.cloudwatch_alarms.sns_topic_subscription_arn
 } 
