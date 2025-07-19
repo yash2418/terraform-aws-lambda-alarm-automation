@@ -40,6 +40,13 @@ tags = {
 
 2. **Deploy:**
 
+**Option A: Using the deployment script (recommended)**
+```bash
+./deploy.sh
+```
+*The deployment script automatically checks prerequisites, validates configuration, and guides you through the deployment process.*
+
+**Option B: Manual deployment**
 ```bash
 terraform init
 terraform plan
